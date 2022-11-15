@@ -1,0 +1,301 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0; }
+  body .card-header {
+    width: 100%;
+    background-color: #0c2c3e;
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 2.2px 5.8px rgba(0, 0, 0, 0.092), 0 3.4px 10.8px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
+    color: white;
+    display: flex; }
+    body .card-header p {
+      padding: 0;
+      margin: 0;
+      font-size: 1.5vw;
+      padding: 10px; }
+    body .card-header ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin: 0 0 0 auto;
+      font-size: 0.7vw;
+      /*コレ*/ }
+      body .card-header ul li {
+        margin-left: 2vw;
+        padding: 25px;
+        list-style: none; }
+  body .Modal_element {
+    width: 20%;
+    height: 40vh;
+    padding: 2px;
+    /* 中央寄せ */ }
+    body .Modal_element .company_name {
+      height: 30vh;
+      margin: 0 auto;
+      margin-top: 1vh;
+      overflow: auto;
+      border: 1px solid #0c2c3e;
+      padding: 5px; }
+      body .Modal_element .company_name input {
+        width: 100%;
+        padding: 2px;
+        background-color: black;
+        color: white;
+        margin-bottom: 1vh; }
+  body .Regit_Area {
+    width: 95%;
+    height: 100%;
+    padding: 0;
+    margin: 10px;
+    display: flex; }
+    body .Regit_Area .Edit {
+      width: 40%; }
+      body .Regit_Area .Edit table {
+        width: 70%;
+        table-layout: fixed;
+        border-collapse: separate; }
+        body .Regit_Area .Edit table .Title_Td {
+          width: 30%;
+          background-color: #083255;
+          color: white;
+          padding-left: 1vw;
+          border-bottom: 1px solid white; }
+        body .Regit_Area .Edit table td {
+          padding: 2px;
+          font-size: 0.8vw; }
+          body .Regit_Area .Edit table td .shogo_call,
+          body .Regit_Area .Edit table td #add_process {
+            width: 30%;
+            margin-left: 0;
+            margin-top: 0.5vh;
+            margin-bottom: 0.5vh;
+            font-size: 0.7vw;
+            text-align: center;
+            border: none;
+            background-color: #083255;
+            border: 1px solid #083255;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer; }
+            body .Regit_Area .Edit table td .shogo_call:hover,
+            body .Regit_Area .Edit table td #add_process:hover {
+              background-color: white;
+              border: 1px solid #083255;
+              color: #083255; }
+        body .Regit_Area .Edit table .shori_box {
+          padding: 0; }
+          body .Regit_Area .Edit table .shori_box .Shori_content_box {
+            width: 100%;
+            height: 20vh;
+            padding: 0;
+            border: 1px solid #430a0a;
+            overflow: auto; }
+            body .Regit_Area .Edit table .shori_box .Shori_content_box .shoin_box {
+              width: 95%;
+              height: 3vh;
+              padding: 5px;
+              margin: 10px auto;
+              border-bottom: 1px solid #083255; }
+              body .Regit_Area .Edit table .shori_box .Shori_content_box .shoin_box .shoin {
+                width: 85%; }
+              body .Regit_Area .Edit table .shori_box .Shori_content_box .shoin_box .del_button {
+                width: 5%;
+                padding: 2px;
+                margin-left: 1vw;
+                border: none;
+                background-color: #024d4c;
+                color: white;
+                font-size: 0.8vw;
+                text-align: center;
+                cursor: pointer; }
+                body .Regit_Area .Edit table .shori_box .Shori_content_box .shoin_box .del_button:hover {
+                  background-color: white;
+                  outline: 1px solid #024d4c;
+                  color: #024d4c; }
+        body .Regit_Area .Edit table select {
+          width: 100%;
+          padding: 5px; }
+        body .Regit_Area .Edit table input {
+          width: 100%;
+          box-sizing: border-box;
+          display: inline-block;
+          padding: 5px; }
+    body .Regit_Area .hyoji {
+      border: 1px solid black;
+      width: 70%;
+      height: 80vh;
+      padding: 5px; }
+  body .card-body {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex; }
+    body .card-body .busho_area {
+      width: 30%;
+      height: 90%;
+      padding: 20px;
+      margin-top: 2vh;
+      margin-left: 1vw;
+      overflow: auto;
+      box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 2.2px 5.8px rgba(0, 0, 0, 0.092), 0 3.4px 10.8px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13); }
+      body .card-body .busho_area .busho_name {
+        width: 90%;
+        margin-bottom: 10%;
+        text-align: left;
+        font-size: 1.2vw;
+        padding: 10px;
+        color: white;
+        border-radius: 10px; }
+        body .card-body .busho_area .busho_name a {
+          color: white;
+          text-decoration: none; }
+        body .card-body .busho_area .busho_name p {
+          width: 100%;
+          padding: 0;
+          margin: 0; }
+        body .card-body .busho_area .busho_name .Company_yoso_iryo {
+          width: 95%;
+          height: 20%;
+          margin-top: 1vh;
+          background-color: #083255;
+          text-align: left; }
+          body .card-body .busho_area .busho_name .Company_yoso_iryo:hover {
+            background-color: white;
+            color: #083255;
+            outline: 1px #083255 solid; }
+          body .card-body .busho_area .busho_name .Company_yoso_iryo a p {
+            font-size: 0.8vw;
+            padding: 5px; }
+          body .card-body .busho_area .busho_name .Company_yoso_iryo a:hover {
+            color: #083255; }
+        body .card-body .busho_area .busho_name .Company_yoso_name {
+          width: 85%;
+          height: 20%;
+          margin-top: 1vh;
+          background-color: #083255;
+          text-align: left; }
+          body .card-body .busho_area .busho_name .Company_yoso_name:hover {
+            background-color: white;
+            color: #083255;
+            outline: 1px #083255 solid; }
+          body .card-body .busho_area .busho_name .Company_yoso_name a p {
+            font-size: 0.7vw;
+            padding: 5px; }
+          body .card-body .busho_area .busho_name .Company_yoso_name a:hover {
+            color: #083255; }
+        body .card-body .busho_area .busho_name .Company_yoso_shori_name {
+          width: 75%;
+          height: 20%;
+          margin-top: 1vh;
+          background-color: #083255;
+          text-align: left; }
+          body .card-body .busho_area .busho_name .Company_yoso_shori_name:hover {
+            background-color: white;
+            color: #083255;
+            outline: 1px #083255 solid; }
+          body .card-body .busho_area .busho_name .Company_yoso_shori_name a p {
+            font-size: 0.7vw;
+            padding: 5px; }
+          body .card-body .busho_area .busho_name .Company_yoso_shori_name a:hover {
+            color: #083255; }
+        body .card-body .busho_area .busho_name .iryo {
+          width: 100%;
+          height: auto;
+          background-color: #083255;
+          padding: 5px; }
+          body .card-body .busho_area .busho_name .iryo:hover {
+            background-color: white;
+            color: #083255;
+            outline: 1px #083255 solid; }
+            body .card-body .busho_area .busho_name .iryo:hover a p {
+              color: #083255; }
+            body .card-body .busho_area .busho_name .iryo:hover a:hover {
+              color: #083255; }
+          body .card-body .busho_area .busho_name .iryo a p {
+            font-size: 1vw; }
+          body .card-body .busho_area .busho_name .iryo a:hover {
+            color: #083255; }
+      body .card-body .busho_area .kaikei {
+        background-color: #08554b; }
+      body .card-body .busho_area .kensetu {
+        background-color: #914205; }
+      body .card-body .busho_area .jinji {
+        background-color: #373737; }
+      body .card-body .busho_area .system {
+        background-color: #c38710; }
+      body .card-body .busho_area .somu {
+        background-color: #6f0404; }
+    body .card-body .drawing_Area {
+      width: 95%;
+      height: 100%;
+      padding: 5px;
+      margin-left: 2vw;
+      text-align: center;
+      display: flex; }
+      body .card-body .drawing_Area .test {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white; }
+      body .card-body .drawing_Area .regit_judge {
+        width: 100%;
+        height: 100%;
+        margin-top: 10vh; }
+        body .card-body .drawing_Area .regit_judge p {
+          margin: auto;
+          font-size: 1vw;
+          font-weight: 900; }
+      body .card-body .drawing_Area .Company_name_element {
+        width: 20%;
+        height: auto;
+        padding: 0;
+        margin-left: 1vw;
+        margin-bottom: 1vh; }
+      body .card-body .drawing_Area a {
+        padding: 0; }
+        body .card-body .drawing_Area a p {
+          color: white;
+          font-size: 0.7vw;
+          margin-top: 15px; }
+      body .card-body .drawing_Area .element_iryo {
+        background-color: #083255;
+        border: 1px solid #083255;
+        color: white; }
+        body .card-body .drawing_Area .element_iryo:hover {
+          background-color: white;
+          border: 1px solid #083255; }
+          body .card-body .drawing_Area .element_iryo:hover a {
+            text-decoration: none; }
+            body .card-body .drawing_Area .element_iryo:hover a p {
+              color: #083255; }
+              body .card-body .drawing_Area .element_iryo:hover a p:hover {
+                color: #083255; }
+      body .card-body .drawing_Area table {
+        width: 90%;
+        overflow: auto; }
+        body .card-body .drawing_Area table th {
+          width: 90vw;
+          background-color: #073645;
+          color: white;
+          text-align: left;
+          padding: 0; }
+          body .card-body .drawing_Area table th a:hover {
+            text-decoration-color: white; }
+          body .card-body .drawing_Area table th h5 {
+            width: 100%;
+            padding: 5px;
+            margin: 10px auto;
+            color: white;
+            font-size: 0.8vw; }
+        body .card-body .drawing_Area table td {
+          width: 90vw;
+          border: 1px solid #073645;
+          text-align: left;
+          padding: 0; }
+          body .card-body .drawing_Area table td p {
+            margin-top: 1vh;
+            margin-left: 1vw;
+            color: #073645;
+            font-size: 0.8vw; }
+
+/*# sourceMappingURL=app.css.map */

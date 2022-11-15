@@ -1,0 +1,385 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    .card-header {
+        width: 100%;
+        background-color: rgb(12, 44, 62);
+        box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 2.2px 5.8px rgba(0, 0, 0, 0.092), 0 3.4px 10.8px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
+        color: white;
+        display: flex;
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 1.5vw;
+            padding: 10px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin: 0 0 0 auto;
+            font-size: 0.7vw;
+            /*コレ*/
+            li {
+                margin-left: 2vw;
+                padding: 25px;
+                list-style: none;
+            }
+        }
+    }
+    .Modal_element {
+        width: 20%;
+        height: 40vh;
+        padding: 2px;
+        /* 中央寄せ */
+        .company_name {
+            height: 30vh;
+            margin: 0 auto;
+            margin-top: 1vh;
+            overflow: auto;
+            border: 1px solid rgb(12, 44, 62);
+            padding: 5px;
+            // p {
+            //     clear: both;
+            //     margin: 0;
+            //     padding: 0;
+            // }
+            input {
+                width: 100%;
+                padding: 2px;
+                background-color: black;
+                color: white;
+                margin-bottom: 1vh;
+            }
+        }
+    }
+    .Regit_Area {
+        width: 95%;
+        height: 100%;
+        padding: 0;
+        margin: 10px;
+        display: flex;
+        .Edit {
+            width: 40%;
+            table {
+                width: 70%;
+                table-layout: fixed;
+                border-collapse: separate;
+                .Title_Td {
+                    width: 30%;
+                    background-color: rgb(8, 50, 85);
+                    color: white;
+                    padding-left: 1vw;
+                    border-bottom: 1px solid white;
+                }
+                td {
+                    padding: 2px;
+                    font-size: 0.8vw;
+                    .shogo_call,
+                    #add_process {
+                        width: 30%;
+                        margin-left: 0;
+                        margin-top: 0.5vh;
+                        margin-bottom: 0.5vh;
+                        font-size: 0.7vw;
+                        text-align: center;
+                        border: none;
+                        background-color: rgb(8, 50, 85);
+                        border: 1px solid rgb(8, 50, 85);
+                        padding: 5px;
+                        border-radius: 5px;
+                        color: white;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: white;
+                            border: 1px solid rgb(8, 50, 85);
+                            color: rgb(8, 50, 85);
+                        }
+                    }
+                }
+                .shori_box {
+                    padding: 0;
+                    .Shori_content_box {
+                        width: 100%;
+                        height: 20vh;
+                        padding: 0;
+                        border: 1px solid rgb(67, 10, 10);
+                        overflow: auto;
+                        .shoin_box {
+                            width: 95%;
+                            height: 3vh;
+                            padding: 5px;
+                            margin: 10px auto;
+                            border-bottom: 1px solid rgb(8, 50, 85);
+                            .shoin {
+                                width: 85%;
+                            }
+                            .del_button {
+                                width: 5%;
+                                padding: 2px;
+                                margin-left: 1vw;
+                                border: none;
+                                background-color: rgb(2, 77, 76);
+                                color: white;
+                                font-size: 0.8vw;
+                                text-align: center;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: white;
+                                    outline: 1px solid rgb(2, 77, 76);
+                                    color: rgb(2, 77, 76);
+                                }
+                            }
+                        }
+                    }
+                }
+                select {
+                    width: 100%;
+                    padding: 5px;
+                }
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    padding: 5px;
+                }
+            }
+        }
+        .hyoji {
+            border: 1px solid black;
+            width: 70%;
+            height: 80vh;
+            padding: 5px;
+        }
+    }
+    .card-body {
+        width: 100%;
+        margin-top: 2vh;
+        display: flex;
+        .busho_area {
+            width: 30%;
+            height: 90%;
+            padding: 20px;
+            margin-top: 2vh;
+            margin-left: 1vw;
+            overflow: auto;
+            box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 2.2px 5.8px rgba(0, 0, 0, 0.092), 0 3.4px 10.8px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
+            .busho_name {
+                width: 90%;
+                margin-bottom: 10%;
+                text-align: left;
+                font-size: 1.2vw;
+                padding: 10px;
+                color: white;
+                border-radius: 10px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                p {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+                .Company_yoso_iryo {
+                    width: 95%;
+                    height: 20%;
+                    margin-top: 1vh;
+                    background-color: rgb(8, 50, 85);
+                    text-align: left;
+                    &:hover {
+                        background-color: white;
+                        color: rgb(8, 50, 85);
+                        outline: 1px rgb(8, 50, 85) solid;
+                    }
+                    a {
+                        p {
+                            font-size: 0.8vw;
+                            padding: 5px;
+                        }
+                        &:hover {
+                            color: rgb(8, 50, 85);
+                        }
+                    }
+                }
+                .Company_yoso_name {
+                    width: 85%;
+                    height: 20%;
+                    margin-top: 1vh;
+                    background-color: rgb(8, 50, 85);
+                    text-align: left;
+                    &:hover {
+                        background-color: white;
+                        color: rgb(8, 50, 85);
+                        outline: 1px rgb(8, 50, 85) solid;
+                    }
+                    a {
+                        p {
+                            font-size: 0.7vw;
+                            padding: 5px;
+                        }
+                        &:hover {
+                            color: rgb(8, 50, 85);
+                        }
+                    }
+                }
+                .Company_yoso_shori_name {
+                    width: 75%;
+                    height: 20%;
+                    margin-top: 1vh;
+                    background-color: rgb(8, 50, 85);
+                    text-align: left;
+                    &:hover {
+                        background-color: white;
+                        color: rgb(8, 50, 85);
+                        outline: 1px rgb(8, 50, 85) solid;
+                    }
+                    a {
+                        p {
+                            font-size: 0.7vw;
+                            padding: 5px;
+                        }
+                        &:hover {
+                            color: rgb(8, 50, 85);
+                        }
+                    }
+                }
+                .iryo {
+                    width: 100%;
+                    height: auto;
+                    background-color: rgb(8, 50, 85);
+                    padding: 5px;
+                    &:hover {
+                        background-color: white;
+                        color: rgb(8, 50, 85);
+                        outline: 1px rgb(8, 50, 85) solid;
+                        a {
+                            p {
+                                color: rgb(8, 50, 85);
+                            }
+                            &:hover {
+                                color: rgb(8, 50, 85);
+                            }
+                        }
+                    }
+                    a {
+                        p {
+                            font-size: 1vw;
+                        }
+                        &:hover {
+                            color: rgb(8, 50, 85);
+                        }
+                    }
+                }
+            }
+            .kaikei {
+                background-color: rgb(8, 85, 75);
+            }
+            .kensetu {
+                background-color: rgb(145, 66, 5);
+            }
+            .jinji {
+                background-color: rgb(55, 55, 55);
+            }
+            .system {
+                background-color: rgb(195, 135, 16);
+            }
+            .somu {
+                background-color: rgb(111, 4, 4);
+            }
+        }
+        .drawing_Area {
+            width: 95%;
+            height: 100%;
+            padding: 5px;
+            margin-left: 2vw;
+            text-align: center;
+            display: flex;
+            .test {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                color: white;
+            }
+            .regit_judge {
+                width: 100%;
+                height: 100%;
+                margin-top: 10vh;
+                p {
+                    margin: auto;
+                    font-size: 1vw;
+                    font-weight: 900;
+                }
+            }
+            .Company_name_element {
+                width: 20%;
+                height: auto;
+                padding: 0;
+                margin-left: 1vw;
+                margin-bottom: 1vh;
+            }
+            a {
+                padding: 0;
+                p {
+                    color: white;
+                    font-size: 0.7vw;
+                    margin-top: 15px;
+                }
+            }
+            .element_iryo {
+                background-color: rgb(8, 50, 85);
+                border: 1px solid rgb(8, 50, 85);
+                color: white;
+                &:hover {
+                    background-color: white;
+                    border: 1px solid rgb(8, 50, 85);
+                    a {
+                        text-decoration: none;
+                        p {
+                            color: rgb(8, 50, 85);
+                            &:hover {
+                                color: rgb(8, 50, 85);
+                            }
+                        }
+                    }
+                }
+            }
+            table {
+                width: 90%;
+                overflow: auto;
+                th {
+                    width: 90vw;
+                    background-color: rgb(7, 54, 69);
+                    color: white;
+                    text-align: left;
+                    padding: 0;
+                    a {
+                        &:hover {
+                            text-decoration-color: white;
+                        }
+                    }
+                    h5 {
+                        width: 100%;
+                        padding: 5px;
+                        margin: 10px auto;
+                        color: white;
+                        font-size: 0.8vw;
+                    }
+                }
+                td {
+                    width: 90vw;
+                    border: 1px solid rgb(7, 54, 69);
+                    text-align: left;
+                    padding: 0;
+                    p {
+                        margin-top: 1vh;
+                        margin-left: 1vw;
+                        color: rgb(7, 54, 69);
+                        font-size: 0.8vw;
+                    }
+                }
+            }
+        }
+    }
+}
